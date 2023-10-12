@@ -1,0 +1,70 @@
+{
+    "name": "سورس فريدوم",
+    "logo": "https://te.legra.ph/file/f7e1acf9338cc453a87ad.jpg",
+    "description": "An Advanced Premium Music Bot For Telegram Groups VC.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/sarahassang/musibott",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "لاتغيرها ابدا",
+            "value": "8934899",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "لاتغيرها ابدا",
+            "value": "bf3e98d2c351e4ad06946b4897374a1e", 
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "اكتب توكنك",
+            "required": true
+        },
+        "STRING_SESSION": {
+            "description": "كود بايروجرام : لازم تستخرجة من موقع فريدوم https://replit.com/@freedomSource/Session-Generator#main.py",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": " معرف بوتك بدون @",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "اكتب ايديات المطورين لاتنسى تحط مسافة بين كل ايدي كمثال",
+            "value": "1854384004 1854384004",
+            "required": true
+        },
+        "GROUP": {
+            "description": "اكتب قناة البوت الثانية ، او اتركها كما هي",
+            "value": "xl444",
+            "required": true
+        },
+        "NETWORK": {
+            "description": "اكتب قناة البوت ، او اتركها كما هي",
+           "value": "xl444",
+            "required": true
+        },
+        "MONGODB_URL": {
+            "description": "لاتغيرها أبدا ",
+            "value": "mongodb+srv://veez:mega@cluster0.heqnd.mongodb.net/veez?retryWrites=true&w=majority",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "لاتغيرها ابدا",
+            "value": "muntazer",   
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "اكتب ايدي المالك ، او اتركها كما هي",
+            "value": "1854384004",
+            "required": true 
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ]
+}
